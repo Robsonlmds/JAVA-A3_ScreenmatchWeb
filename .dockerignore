@@ -1,0 +1,4 @@
+target/*.jar
+!.mvn
+target/*
+!target/screenmatch-0.0.1-SNAPSHOT.jar
