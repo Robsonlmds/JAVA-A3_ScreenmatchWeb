@@ -5,23 +5,52 @@
   </a>
   
   <h5 align="center"> 
-    <b> Em andamento... ⌛ </b>
+    <b> Completo ✅ </b>
   </h5>
 </div>
 
+## Correspondência de tela A3 🎥
 
-Este projeto é uma aplicação Java que utiliza uma API para buscar informações sobre séries de TV e seus episódios, permitindo que os dados sejam armazenados e listados através de um repositório. A aplicação interage com o usuário via terminal, oferecendo um menu de opções para realizar buscas e exibir séries.
+A3 Screenmatch é uma aplicação desenvolvida em Java que utiliza a API OMDB para buscar informações sobre séries de TV. Ela permite que os usuários armazenem e consultem dados como temporadas e episódios diretamente no terminal por meio de um menu interativo.
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
-A aplicação está estruturada nos seguintes pacotes e classes principais:
+A aplicação foi organizada em pacotes e classes, cada qual desempenhando um papel específico:
 
-- **Pacote `principal`**: Contém a classe `Principal`, responsável pela interface de linha de comando e navegação no menu.
-- **Pacote `model`**: Define os modelos de dados, como `DadosSerie`, `DadosTemporada` e `Serie`.
-- **Pacote `repository`**: Contém a interface `SerieRepository`, que manipula o armazenamento de dados das séries.
-- **Pacote `service`**: Possui classes para consumo e conversão de dados, como `ConsumoApi` (realiza chamadas HTTP para a API) e `ConverteDados` (converte dados JSON para objetos Java).
+Pacoteprincipal
 
-## Funcionalidades
+ClassePrincipal :Gerencia a interface de linha de comando e o menu principal, permitindo que o usuário navegue pelas funcionalidades disponíveis.
+Pacotemodel
+
+ClasseDadosSerie : Representa informações básicas da série, como título, gênero e ano.
+ClasseDadosTemporada : Armazena os dados relacionados a cada temporada, incluindo o número de episódios e suas investigações.
+ClasseSerie : Agrega todas as informações de uma série, incluindo temporadas e episódios.
+Pacoterepository
+
+InterfaceSerieRepository : Define as operações para gerenciar o armazenamento e recuperação de séries no repositório local.
+Pacoteservice
+
+ClasseConsumoApi : Faz as chamadas HTTP à API OMDB para buscar dados sobre séries e episódios.
+ClasseConverteDados : Converte os dados recebidos da API (em JSON) para objetos Java.
+
+## Funcionalidades 🚀
+
+A aplicação oferece quatro funcionalidades principais, acessadas via menu:
+
+Buscar Séries:
+Permite buscar uma série pelo nome, recuperando informações gerais da série por meio da API OMDB .
+Os dados da série pesquisada são armazenados localmente para consultas futuras.
+
+Pesquisar Episódio:
+Exibe todas as temporadas e episódios de uma série informada pelo usuário.
+As informações são buscadas diretamente na API OMDB e exibidas no terminal.
+
+Listar Séries Pesquisadas:
+Mostra todas as séries que já foram armazenadas, organizadas por gênero, facilitando a visualização e o gerenciamento.
+
+Sair:
+Encerrar a aplicação.
+
 
 ### Menu Principal
 
@@ -33,15 +62,31 @@ O menu oferece as seguintes opções para interação:
 
 Para sair da aplicação, o usuário pode escolher a opção `0`.
 
-### Exemplo de Uso
+## Exemplo de uso 📖
 
-1. Execute o programa.
-2. Digite a opção desejada no menu.
-3. Para `Buscar Séries`, digite o nome da série que deseja buscar.
-4. Para `Buscar Episódios`, insira o nome da série cujos episódios quer listar.
-5. Para `Listar Séries Buscadas`, o programa exibirá as séries armazenadas.
+Iniciar o Programa
 
----
+Execute o programa para visualizar o menu principal no terminal.
+Selecione uma opção
+
+Escolha uma das opções disponíveis no menu:
+Para Buscar Séries , insira o nome da série desejada.
+Para Buscar Episódios , informe o nome de uma série pesquisada anteriormente.
+Para Listar Séries Buscadas , visualize uma lista das séries armazenadas no repositório.
+Acompanhar o Resultado
+
+O programa exibe as informações solicitadas diretamente no terminal.
+
+## Tecnologias Utilizadas 🛠️
+Java 11+
+API OMDB : fornece dados de séries e episódios.
+Bibliotecas Java :
+Gson: Manipulação de dados JSON.
+HttpClient: Realiza chamadas HTTP para uma API.
+
+## Agradecimentos 🙌
+Agradecemos seu interesse no projeto A3 Screenmatch . Esperamos que ele facilite suas buscas por séries e ajude a organizar informações de forma prática e eficiente! 😊
+
   <div align="center">
   
   ## 👩🏻‍💻 Autores <br>
